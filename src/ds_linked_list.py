@@ -213,9 +213,9 @@ class LinkedList(object):
     def insert_at_current(self, item):
         self.insert_at_index(item, self.current_idx)
 
-    def item_at_index(self, index):
+    def node_at_index(self, index):
         self.set_current_nth(index)
-        return self.current.item
+        return self.current
 
     def rotate_right(self, n=1):
         assert n >= 0
